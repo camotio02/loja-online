@@ -11,6 +11,22 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+.total {
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    color:white;
+    background-color: #006A4E;
+    min-width: 3rem;
+    width: auto;
+    height: 3rem;
+    border-radius: 2px;
+}
 .add{
     position: fixed;
     bottom: 2rem;

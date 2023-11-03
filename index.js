@@ -30,6 +30,19 @@ const protudo = [
         quantidade: 1,
     },
 ]
+for (let i = 1; i <= 1150; i++) {
+    const randomModel = `Modelo ${i}`;
+    const randomCategory = `Categoria ${Math.floor(Math.random() * 10) + 1}`;
+    const randomPrice = (Math.random() * 1000).toFixed(2);
+    
+    protudo.push({
+        id: i,
+        name: randomModel,
+        category: randomCategory,
+        price: parseFloat(randomPrice),
+        quantidade: 1,
+    });
+}
 const list = document.querySelector('.protudos')
 const sacolaVirtual = []
 const mayTabelaTemp = `
