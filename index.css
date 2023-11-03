@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px;
+}
+.sacola {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.add{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    background-color: #006A4E;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2px;
+}
+h1 {
+    color: #006A4E;
+}
+
+.protudos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 2px;
+    padding: 2px;
+    width: 90%;
+    height: auto;
+}
+.tabela{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    background-color: #006A4E;
+}
+.protudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+    padding: 5px;
+    min-height: 20px;
+    min-width: 100%;
+    height: auto;
+}
+.protudo:hover 
+{box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;border-left: 2px solid #006A4E;}
+span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #F8F8F8;
+    cursor: pointer;
+}
+.protudo span {
+    color: #696969;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border: none;
+    cursor: pointer;
+    height: auto;
+    border-radius: 10px;
+}
+.buy {
+
+}
+.remove {
+    background-color: #3A0002;
+    color: #F8F8F8;
+}
