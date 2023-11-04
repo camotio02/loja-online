@@ -4,6 +4,7 @@ body {
     justify-content: center;
     flex-direction: column;
     margin: 0px;
+    overflow: auto;
 }
 
 .sacola {
@@ -117,8 +118,72 @@ button {
 }
 
 .buy {}
+.eyes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    gap: 1rem;
+    background-color: #F8F8F8;
+}
+.title {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    min-height: 7%;
+    top: 0;
+    left: 0;
+    background-color: #006A4E;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 8%;
+    min-height: 90%;
+    height: auto;
+    width: 100%;
+    margin-inline: auto;
+    overflow: auto;
 
-.remove {
+}
+img {
+    max-width: 90%;
+    height: auto;
+    border-left: 3px solid #006A4E;
+}
+.more {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.more .span {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap !important;
+    color: #006A4E;
+    background-color: wheat;
+    padding: 10px;
+    height: auto;
+    border-left: 3px solid #006A4E;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.see {
     background-color: #3A0002;
     color: #F8F8F8;
 }
