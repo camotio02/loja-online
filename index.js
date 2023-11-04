@@ -216,9 +216,9 @@ const protudo = [
         price: 599.99,
         quantidade: 1,
     },
-   
 
- {
+
+    {
         id: 37,
         name: 'Google Pixel 8',
         price: 999.99,
@@ -628,7 +628,7 @@ function general() {
 const insertItens = (item, index) => {
     return (
         list.innerHTML += `
-        <div class='protudo'>                
+        <div id="${item.id}" class='protudo'>                
             <span>${item.id}</span>
             <span>${item.name}</span>
             <span>$ ${item.price}</span>
@@ -666,7 +666,7 @@ const buscarProdutoPorNome = () => {
 
 }
 const calcularTotal = () => {
-    console.log(sacolaVirtual)
+
     let total = 0;
     sacolaVirtual.length > 0 ?
         sacolaVirtual.forEach(item => {
@@ -678,7 +678,7 @@ const calcularTotal = () => {
             total += Number(item.price + add)
             document.querySelector('.total').innerHTML =
                 (`$ ${total}`)
-        }): document.querySelector('.total').innerHTML ="$ 0";
+        }) : document.querySelector('.total').innerHTML = "$ 0";
 }
 function adicionarAoCarrinho(id, e) {
     const items = protudo.find(item => item.id === id);
@@ -711,5 +711,14 @@ document.addEventListener('click', (event) => {
         adicionarAoCarrinho(Number(productId), "less");
     }
 });
-
+const checked = () => {
+    document.addEventListener('click', (e) => {
+        sacolaVirtual.forEach(item => {
+            const chechk = document.getElementById(`${item.id}`)
+            chechk.classList.add('checked')
+            
+        })
+    })
+}
+checked()
 general()

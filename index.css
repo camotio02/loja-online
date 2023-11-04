@@ -5,12 +5,14 @@ body {
     flex-direction: column;
     margin: 0px;
 }
+
 .sacola {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 .total {
     position: fixed;
     bottom: 6rem;
@@ -20,14 +22,15 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 5px;
-    color:white;
+    color: white;
     background-color: #006A4E;
     min-width: 3rem;
     width: auto;
     height: 3rem;
     border-radius: 2px;
 }
-.add{
+
+.add {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
@@ -35,12 +38,13 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color:white;
+    color: white;
     background-color: #006A4E;
     width: 3rem;
     height: 3rem;
     border-radius: 2px;
 }
+
 h1 {
     color: #006A4E;
 }
@@ -56,13 +60,15 @@ h1 {
     width: 90%;
     height: auto;
 }
-.tabela{
+
+.tabela {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-width: 100%;
     background-color: #006A4E;
 }
+
 .protudo {
     display: flex;
     align-items: center;
@@ -73,8 +79,20 @@ h1 {
     min-width: 100%;
     height: auto;
 }
-.protudo:hover 
-{box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;border-left: 2px solid #006A4E;}
+
+.checked {
+    background-color: #006A4E !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-left: 2px solid #006A4E;
+}
+.checked span {
+    color: white !important;
+}
+.protudo:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-left: 2px solid #006A4E;
+}
+
 span {
     display: flex;
     align-items: center;
@@ -83,21 +101,23 @@ span {
     color: #F8F8F8;
     cursor: pointer;
 }
+
 .protudo span {
     color: #696969;
 }
-button{
+
+button {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     border: none;
     cursor: pointer;
     height: auto;
     border-radius: 10px;
 }
-.buy {
 
-}
+.buy {}
+
 .remove {
     background-color: #3A0002;
     color: #F8F8F8;
